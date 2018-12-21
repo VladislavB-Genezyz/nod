@@ -1,0 +1,53 @@
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px)
+	.galleryWrap
+		&__left
+			height: 200px;
+			img
+				top: -51px;				
+		&__right
+			img
+				height: 88px;
+
+
+@media screen and (max-width: 821px)
+	.infograph
+		width: 100%;
+		border: none;
+
+
+@media screen and (max-width: 767px)
+	.infograph
+		width: 100%;
+	.infograph__table 
+		.table
+			&__row
+				&:not(:first-of-type)
+					// height: auto;
+					height: 180px;
+				&-title
+					display: flex;
+					justify-content: space-between;
+					span:first-of-type
+						margin-left: 0%;
+			.succes,.oper,.deliverance,.rehabilitationClinic,.rehabilitationClinicYS
+				display: grid;
+				grid-template-rows: 50px;
+				grid-template-columns: 100%;
+				height: 180px;
+				&__text
+					text-align: center;
+					margin-top: 10px;
+					height: 100px;
+					span
+						display: inline;
+				&__graph
+					justify-content: space-between;
+					margin-left: 0;
+					&-elem 
+						span:first-of-type
+							font-size: 15px;
+						span.days
+							font-size: 13px;
